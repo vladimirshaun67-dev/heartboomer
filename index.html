@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond The Heart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="universe"></canvas>
+
+    <div class="vignette"></div>
+
+    <div class="hud">
+        <span class="system-status">● HEART CORE ONLINE</span>
+        <span class="system-subtitle">ENERGY SYSTEM // 001</span>
+    </div>
+
+    <main class="interface">
+
+        <div class="intro" id="intro">
+            <div class="core-icon">♡</div>
+            <h1>Something extraordinary<br>is waiting.</h1>
+            <p>Initiate the sequence.</p>
+
+            <button id="startButton">
+                <span>ACTIVATE</span>
+                <span class="button-arrow">↗</span>
+            </button>
+        </div>
+
+        <div class="final-message" id="finalMessage">
+            <div class="message-line"></div>
+            <h1>YOU ARE<br>ONE OF A KIND.</h1>
+            <p>Some things are simply beyond words.</p>
+
+            <button id="envelopeButton" class="envelope-button">
+                <span>✉</span>
+                OPEN YOUR LETTER
+            </button>
+        </div>
+
+    </main>
+
+    <!-- INTERACTIVE LETTER -->
+
+    <div class="letter-overlay" id="letterOverlay">
+        <div class="letter-card">
+
+            <button class="close-letter" id="closeLetter">×</button>
+
+            <div class="letter-icon">♡</div>
+
+            <p class="letter-label">A LITTLE SOMETHING FOR YOU</p>
+
+            <h2>Dear Nini,</h2>
+
+            <div class="letter-content" id="letterContent"></div>
+
+            <p class="letter-signature">Your Adi. ♡</p>
+
+        </div>
+    </div>
+
+    <div class="bottom-controls">
+        <span>DESIGNED WITH ♥</span>
+        <button id="replayButton">↻ REPLAY SEQUENCE</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
